@@ -15,7 +15,7 @@ public class CameraViewModel: NSObject {
 
     weak var delegate: CameraViewModelDelegate?
 
-    override init() {
+   public override init() {
         super.init()
         setupSession()
     }
