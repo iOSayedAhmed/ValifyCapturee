@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ValifyCapture
 //
-//  Created by elsayed1ahmed0@gmail.com on 10/05/2024.
-//  Copyright (c) 2024 elsayed1ahmed0@gmail.com. All rights reserved.
+//  Created by iOSAYed on 10/05/2024.
+//  Copyright (c) 2024 iOSAYed All rights reserved.
 //
 
 import UIKit
