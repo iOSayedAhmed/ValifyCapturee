@@ -1,0 +1,6 @@
+framework module ValifyCapture {
+  umbrella header "ValifyCapture-umbrella.h"
+
+  export *
+  module * { export * }
+}

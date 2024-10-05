@@ -1,0 +1,16 @@
+PODS:
+  - ValifyCapture (0.1.0)
+
+DEPENDENCIES:
+  - ValifyCapture (from `../`)
+
+EXTERNAL SOURCES:
+  ValifyCapture:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ValifyCapture: 46144358a35fcdfef238fc0c86e5340a05408a1c
+
+PODFILE CHECKSUM: e2135aefa679caad6f00f292a770420f7f3f889a
+
+COCOAPODS: 1.14.3

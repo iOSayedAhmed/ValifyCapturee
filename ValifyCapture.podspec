@@ -9,27 +9,19 @@
 Pod::Spec.new do |s|
   s.name             = 'ValifyCapture'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ValifyCapture.'
+  s.summary          = 'A lightweight framework that enables seamless selfie capture and approval workflows.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = "ValifyCapture is a modular and lightweight iOS framework that simplifies the process of capturing and approving selfies as part of a digital onboarding or verification flow. Built using AVFoundation, the framework provides a customizable camera interface for capturing selfies, followed by an approval screen where users can either confirm or retake their photo. Upon approval, the captured image is sent back to the host app via a delegate. Ideal for financial institutions, e-commerce platforms, or any app requiring user verification, SelfieCaptureKit ensures a seamless, intuitive user experience while being easy to integrate into any existing application."
 
-  s.homepage         = 'https://github.com/elsayed1ahmed0@gmail.com/ValifyCapture'
+  s.homepage         = 'https://github.com/iOSayedAhmed/ValifyCapture'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'elsayed1ahmed0@gmail.com' => '60572628+iOSayedAhmed@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/elsayed1ahmed0@gmail.com/ValifyCapture.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'ElsayedAhmed' => 'elsayed1ahmed0@gmail.com' }
+  s.source           = { :git => 'https://github.com/iOSayedAhmed/ValifyCapture.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-
+  s.swift_version = '5.0'
   s.source_files = 'ValifyCapture/Classes/**/*'
   
   # s.resource_bundles = {

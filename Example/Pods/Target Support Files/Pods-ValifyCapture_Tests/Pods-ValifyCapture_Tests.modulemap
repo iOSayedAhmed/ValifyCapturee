@@ -1,0 +1,6 @@
+framework module Pods_ValifyCapture_Tests {
+  umbrella header "Pods-ValifyCapture_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
