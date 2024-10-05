@@ -11,7 +11,7 @@ import UIKit
 
 public class CameraViewController: UIViewController {
     public var viewModel: CameraViewModel!
-    public weak var delegate: CameraViewModelDelegate?
+    public weak var delegate: CameraDelegate?
     var previewLayer: AVCaptureVideoPreviewLayer!
     var cancellables: Set<AnyCancellable> = []
 
@@ -48,6 +48,14 @@ public class CameraViewController: UIViewController {
     @objc func capturePhoto() {
         viewModel.captureImage()
     }
+    
+    public func presentCameraVC(with delegate: CameraDelegate) -> UIViewController? {
+           let selfieCameraVC = CameraViewController()
+           selfieCameraVC.modalPresentationStyle = .fullScreen
+           selfieCameraVC.viewModel = CameraViewModel()
+           selfieCameraVC.delegate = delegate
+        return selfieCameraVC
+       }
 }
 
 extension CameraViewController {
