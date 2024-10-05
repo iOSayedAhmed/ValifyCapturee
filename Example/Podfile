@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '13.0'
 
 target 'ValifyCapture_Example' do
-  pod 'ValifyCapture'
+  pod 'ValifyCapture', '~> 1.0.1'
 
   target 'ValifyCapture_Tests' do
     inherit! :search_paths

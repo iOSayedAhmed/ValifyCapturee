@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043238FC5AA99110378CB7FCAA933D99 /* ValifyCapture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03338701078B4CAFBD2CAA66D5119131 /* ValifyCapture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16FF6F8097ABE68E2451C0D4CA7B1577 /* ValifyCapture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25AB42B84E336AF09B6BEB5264AAE647 /* ValifyCapture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A88F95DB7E3124604F461DF58EA661A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5629612CA81E5F1EB4F593C906F5A2E4 /* ValifyCapture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB57AB366C29642BBC11AE779590607 /* ValifyCapture-dummy.m */; };
 		5A15FB4669F5335E5435DE6FBF30DD3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		80E65A7B9E08B151F950CFCC23FE3629 /* Pods-ValifyCapture_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD537E419A1AE43C36F255781F027ADE /* Pods-ValifyCapture_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A79E6F7BF21DDFB208900714D9E6A8F6 /* SelfiCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F18EB7CFE8344D266E40E5CD0759BE /* SelfiCapture.swift */; };
+		919BC3299B8206936C5AE25929B22AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A8A43AD7386D2A768F3A029D99CD4F82 /* Pods-ValifyCapture_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56584812C0EAD499CEF0F500A0A660 /* Pods-ValifyCapture_Tests-dummy.m */; };
 		B6F13244A4B4FA591D245EA1A49EFA0C /* Pods-ValifyCapture_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FDB38B620269CEE680EEEE9C1D4AE /* Pods-ValifyCapture_Example-dummy.m */; };
 		BACEFC5B88838F1D184F3B2A21A264BC /* Pods-ValifyCapture_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 170F8C2066AB4E0B6897CEB2717FF78B /* Pods-ValifyCapture_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D57452FBA6CBC0D57FAFF11FF3009F4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C25E2F97CA9C1596DEDA3421F507A064 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AFC4001930EC4B7EDA6D7B3867F9A /* CameraViewModel.swift */; };
+		CB9DB7306E0586BCA32EEB772824D215 /* CameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CC307247BD143D45786FB20D8058E /* CameraDelegate.swift */; };
+		DFC55FECEDC22D4EB0511D91C458A6B9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4F52668FCD52246CB3E69E082C4B5 /* CameraViewController.swift */; };
+		F0413C34245FA3D46B06C3BCFB737BF0 /* ValifyCapture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CBDE6A7FEDF8CD7E39EA9059B65F88 /* ValifyCapture-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		40AF916CE0C8DAE42DCAAB0C23BE68FC /* PBXContainerItemProxy */ = {
+		6EE3B22372E7B72A19F1F0AFBC0B9BFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD13B5548361EBF3E32B9249FDED2198;
 			remoteInfo = "Pods-ValifyCapture_Example";
 		};
-		9821B68697A77149EDD32FF5E1139FA6 /* PBXContainerItemProxy */ = {
+		A5DBF75C0779D344AB8EACF7A056F843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03338701078B4CAFBD2CAA66D5119131 /* ValifyCapture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValifyCapture-umbrella.h"; sourceTree = "<group>"; };
+		10CBDE6A7FEDF8CD7E39EA9059B65F88 /* ValifyCapture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ValifyCapture-dummy.m"; sourceTree = "<group>"; };
 		110B2686A5EB789B592EB8BA264BF9C5 /* Pods-ValifyCapture_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifyCapture_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		115BC51C629E77272F455D9737551B48 /* Pods-ValifyCapture_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifyCapture_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		145678B6CE0B91B5826D02127C465A02 /* Pods-ValifyCapture_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValifyCapture_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -45,28 +47,30 @@
 		1A3E92175C2B32FAC27B457CC75544B3 /* Pods-ValifyCapture_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValifyCapture_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C1FDB38B620269CEE680EEEE9C1D4AE /* Pods-ValifyCapture_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ValifyCapture_Example-dummy.m"; sourceTree = "<group>"; };
 		1F78228E0B5BA1EE43FA1F61295FEB85 /* Pods-ValifyCapture_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ValifyCapture_Tests"; path = Pods_ValifyCapture_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3687F2614B60EA53B564E2729FEDE683 /* ValifyCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValifyCapture.debug.xcconfig; sourceTree = "<group>"; };
+		25AB42B84E336AF09B6BEB5264AAE647 /* ValifyCapture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValifyCapture-umbrella.h"; sourceTree = "<group>"; };
+		2B38F4E5AB39872E528106388F71F5EF /* ValifyCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValifyCapture.debug.xcconfig; sourceTree = "<group>"; };
+		2C6AFC4001930EC4B7EDA6D7B3867F9A /* CameraViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewModel.swift; path = ValifyCapture/Classes/CameraViewModel.swift; sourceTree = "<group>"; };
 		37B150F045A207CBD3F772D1FC42816B /* ValifyCapture */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ValifyCapture; path = ValifyCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43F18EB7CFE8344D266E40E5CD0759BE /* SelfiCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelfiCapture.swift; path = ValifyCapture/Classes/SelfiCapture.swift; sourceTree = "<group>"; };
+		3CE0169B996DFD552CCBC585749ED60C /* ValifyCapture-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ValifyCapture-Info.plist"; sourceTree = "<group>"; };
 		49F230CD54D7D5FE799EE9D34F948A0A /* Pods-ValifyCapture_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ValifyCapture_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4F390513E13E13ED724EBBDB254A3E4E /* Pods-ValifyCapture_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ValifyCapture_Example"; path = Pods_ValifyCapture_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0C138766F95A4D9E071501841CEC89 /* Pods-ValifyCapture_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValifyCapture_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6A56584812C0EAD499CEF0F500A0A660 /* Pods-ValifyCapture_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ValifyCapture_Tests-dummy.m"; sourceTree = "<group>"; };
-		6C129E2434E33F35D333EB4ADDDB52C2 /* ValifyCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValifyCapture.release.xcconfig; sourceTree = "<group>"; };
 		6DF0E7D3CF85E01F96B7C79D122C9BB2 /* Pods-ValifyCapture_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValifyCapture_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6EF29C2605414D6BD795286EAD48AC71 /* ValifyCapture-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValifyCapture-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		768B5762AFD00BBF3660AA3DBDFFAAA9 /* ValifyCapture-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ValifyCapture-Info.plist"; sourceTree = "<group>"; };
+		78C27A17B48BBDBC4F1E754674D33485 /* ValifyCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValifyCapture.release.xcconfig; sourceTree = "<group>"; };
+		928CC307247BD143D45786FB20D8058E /* CameraDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraDelegate.swift; path = ValifyCapture/Classes/CameraDelegate.swift; sourceTree = "<group>"; };
 		9CEC281D6368E2EEEB13530BC84373E9 /* Pods-ValifyCapture_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifyCapture_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DC21D216D6202F76CC36C23DC7C41A9 /* ValifyCapture-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValifyCapture-prefix.pch"; sourceTree = "<group>"; };
 		A1AB4F27751BA76D28CD37F3CB1E4929 /* Pods-ValifyCapture_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValifyCapture_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A59DF4F75A65DAE627A1514F90981A5E /* Pods-ValifyCapture_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValifyCapture_Example-Info.plist"; sourceTree = "<group>"; };
 		AD537E419A1AE43C36F255781F027ADE /* Pods-ValifyCapture_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ValifyCapture_Example-umbrella.h"; sourceTree = "<group>"; };
-		BAB57AB366C29642BBC11AE779590607 /* ValifyCapture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ValifyCapture-dummy.m"; sourceTree = "<group>"; };
 		C1E0B8E270287FCED7CBAB8700C4E524 /* Pods-ValifyCapture_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifyCapture_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2FE0C14F76288DE33765391F814C912 /* Pods-ValifyCapture_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ValifyCapture_Example.modulemap"; sourceTree = "<group>"; };
-		DD4BBD53196DE24D48224EFB5DCEE536 /* ValifyCapture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ValifyCapture.modulemap; sourceTree = "<group>"; };
+		C8E4F52668FCD52246CB3E69E082C4B5 /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ValifyCapture/Classes/CameraViewController.swift; sourceTree = "<group>"; };
 		F18F05A3075D212F3BD3EF89652EB2EE /* Pods-ValifyCapture_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ValifyCapture_Tests.modulemap"; sourceTree = "<group>"; };
+		FA6F3725F6616BB31B063B3D2FE49C5C /* ValifyCapture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ValifyCapture.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +82,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E3B63B895D135302EBFEFD31DC2AEF1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D57452FBA6CBC0D57FAFF11FF3009F4D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		84A780EAE7591D59D330E688EF6007AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,17 +90,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BD5CCB7B4F8EC2716EF6AAC37A8403D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919BC3299B8206936C5AE25929B22AC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03294686049B232B8532BA06196E1ED2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9028AE8AB511411EFD0421B81E9312DA /* ValifyCapture */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,14 +135,31 @@
 			path = "Target Support Files/Pods-ValifyCapture_Example";
 			sourceTree = "<group>";
 		};
-		9028AE8AB511411EFD0421B81E9312DA /* ValifyCapture */ = {
+		6FB4D7DD76105104B5061ECB716D1959 /* ValifyCapture */ = {
 			isa = PBXGroup;
 			children = (
-				43F18EB7CFE8344D266E40E5CD0759BE /* SelfiCapture.swift */,
-				EF447D40FAF918AAC5FDA36F7239E60B /* Support Files */,
+				928CC307247BD143D45786FB20D8058E /* CameraDelegate.swift */,
+				C8E4F52668FCD52246CB3E69E082C4B5 /* CameraViewController.swift */,
+				2C6AFC4001930EC4B7EDA6D7B3867F9A /* CameraViewModel.swift */,
+				93EDC8B6AA4196385F328361720F3901 /* Support Files */,
 			);
 			name = ValifyCapture;
 			path = ValifyCapture;
+			sourceTree = "<group>";
+		};
+		93EDC8B6AA4196385F328361720F3901 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F3725F6616BB31B063B3D2FE49C5C /* ValifyCapture.modulemap */,
+				10CBDE6A7FEDF8CD7E39EA9059B65F88 /* ValifyCapture-dummy.m */,
+				3CE0169B996DFD552CCBC585749ED60C /* ValifyCapture-Info.plist */,
+				9DC21D216D6202F76CC36C23DC7C41A9 /* ValifyCapture-prefix.pch */,
+				25AB42B84E336AF09B6BEB5264AAE647 /* ValifyCapture-umbrella.h */,
+				2B38F4E5AB39872E528106388F71F5EF /* ValifyCapture.debug.xcconfig */,
+				78C27A17B48BBDBC4F1E754674D33485 /* ValifyCapture.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ValifyCapture";
 			sourceTree = "<group>";
 		};
 		9F31E90F97162329A25C5EB8ED808AEC /* Pods-ValifyCapture_Tests */ = {
@@ -180,7 +193,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				03294686049B232B8532BA06196E1ED2 /* Pods */,
+				F33EE781CDE367A61A5187329249AB92 /* Pods */,
 				C54048CADBD7507BDCD12B3CE7F8D6FD /* Products */,
 				5DD49935B19B89117A86CDF2F0532BC4 /* Targets Support Files */,
 			);
@@ -194,19 +207,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF447D40FAF918AAC5FDA36F7239E60B /* Support Files */ = {
+		F33EE781CDE367A61A5187329249AB92 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD4BBD53196DE24D48224EFB5DCEE536 /* ValifyCapture.modulemap */,
-				BAB57AB366C29642BBC11AE779590607 /* ValifyCapture-dummy.m */,
-				768B5762AFD00BBF3660AA3DBDFFAAA9 /* ValifyCapture-Info.plist */,
-				6EF29C2605414D6BD795286EAD48AC71 /* ValifyCapture-prefix.pch */,
-				03338701078B4CAFBD2CAA66D5119131 /* ValifyCapture-umbrella.h */,
-				3687F2614B60EA53B564E2729FEDE683 /* ValifyCapture.debug.xcconfig */,
-				6C129E2434E33F35D333EB4ADDDB52C2 /* ValifyCapture.release.xcconfig */,
+				6FB4D7DD76105104B5061ECB716D1959 /* ValifyCapture */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ValifyCapture";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,11 +226,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		573FD8BE6957D2B42655C96AE2A82A89 /* Headers */ = {
+		70CACD013B7FCAA55E108E28F4B27A13 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043238FC5AA99110378CB7FCAA933D99 /* ValifyCapture-umbrella.h in Headers */,
+				16FF6F8097ABE68E2451C0D4CA7B1577 /* ValifyCapture-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +257,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1B91EA0D0E0E7917B18BF65A31DA0EB9 /* PBXTargetDependency */,
+				226CECA8093D8BC7C420D10565E7C2CA /* PBXTargetDependency */,
 			);
 			name = "Pods-ValifyCapture_Tests";
 			productName = Pods_ValifyCapture_Tests;
@@ -270,7 +276,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				197AE56A7091B827570FAF3AA346A25F /* PBXTargetDependency */,
+				5B561432D496F29BE6D09A97A9C4B576 /* PBXTargetDependency */,
 			);
 			name = "Pods-ValifyCapture_Example";
 			productName = Pods_ValifyCapture_Example;
@@ -279,12 +285,12 @@
 		};
 		FBA80947BAC15FD379A28887F9519EC0 /* ValifyCapture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45D3EABBB837EA5980530FF9F068EF61 /* Build configuration list for PBXNativeTarget "ValifyCapture" */;
+			buildConfigurationList = 81862BB007E04755128712BC6524F5EC /* Build configuration list for PBXNativeTarget "ValifyCapture" */;
 			buildPhases = (
-				573FD8BE6957D2B42655C96AE2A82A89 /* Headers */,
-				BF4430A6D474EBDB8C049B10916BB8AF /* Sources */,
-				5E3B63B895D135302EBFEFD31DC2AEF1 /* Frameworks */,
-				00EE406A919239FDB2D9E8F8AFCD2655 /* Resources */,
+				70CACD013B7FCAA55E108E28F4B27A13 /* Headers */,
+				4178C352E4EF076A439D9EA59250E48D /* Sources */,
+				9BD5CCB7B4F8EC2716EF6AAC37A8403D /* Frameworks */,
+				CA4ED7F66D62A39A5931B8DACD312B10 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -325,14 +331,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00EE406A919239FDB2D9E8F8AFCD2655 /* Resources */ = {
+		73BE3C96290C996E0FEFBBC38955FA0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73BE3C96290C996E0FEFBBC38955FA0F /* Resources */ = {
+		CA4ED7F66D62A39A5931B8DACD312B10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,12 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF4430A6D474EBDB8C049B10916BB8AF /* Sources */ = {
+		4178C352E4EF076A439D9EA59250E48D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A79E6F7BF21DDFB208900714D9E6A8F6 /* SelfiCapture.swift in Sources */,
-				5629612CA81E5F1EB4F593C906F5A2E4 /* ValifyCapture-dummy.m in Sources */,
+				CB9DB7306E0586BCA32EEB772824D215 /* CameraDelegate.swift in Sources */,
+				DFC55FECEDC22D4EB0511D91C458A6B9 /* CameraViewController.swift in Sources */,
+				C25E2F97CA9C1596DEDA3421F507A064 /* CameraViewModel.swift in Sources */,
+				F0413C34245FA3D46B06C3BCFB737BF0 /* ValifyCapture-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,17 +385,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		197AE56A7091B827570FAF3AA346A25F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ValifyCapture;
-			target = FBA80947BAC15FD379A28887F9519EC0 /* ValifyCapture */;
-			targetProxy = 9821B68697A77149EDD32FF5E1139FA6 /* PBXContainerItemProxy */;
-		};
-		1B91EA0D0E0E7917B18BF65A31DA0EB9 /* PBXTargetDependency */ = {
+		226CECA8093D8BC7C420D10565E7C2CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ValifyCapture_Example";
 			target = AD13B5548361EBF3E32B9249FDED2198 /* Pods-ValifyCapture_Example */;
-			targetProxy = 40AF916CE0C8DAE42DCAAB0C23BE68FC /* PBXContainerItemProxy */;
+			targetProxy = 6EE3B22372E7B72A19F1F0AFBC0B9BFE /* PBXContainerItemProxy */;
+		};
+		5B561432D496F29BE6D09A97A9C4B576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ValifyCapture;
+			target = FBA80947BAC15FD379A28887F9519EC0 /* ValifyCapture */;
+			targetProxy = A5DBF75C0779D344AB8EACF7A056F843 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -454,6 +462,39 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1DB16CB9F419A8B5ECA20539737EFDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C27A17B48BBDBC4F1E754674D33485 /* ValifyCapture.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ValifyCapture/ValifyCapture-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ValifyCapture/ValifyCapture-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ValifyCapture/ValifyCapture.modulemap";
+				PRODUCT_MODULE_NAME = ValifyCapture;
+				PRODUCT_NAME = ValifyCapture;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -658,9 +699,9 @@
 			};
 			name = Release;
 		};
-		D57EB12EC17F4FE474ADDF3DB872642D /* Debug */ = {
+		BA90874412D3116492E631F4194ACF0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3687F2614B60EA53B564E2729FEDE683 /* ValifyCapture.debug.xcconfig */;
+			baseConfigurationReference = 2B38F4E5AB39872E528106388F71F5EF /* ValifyCapture.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -690,51 +731,9 @@
 			};
 			name = Debug;
 		};
-		E06E0CCFF9C1AF3DDD0967523646FA08 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C129E2434E33F35D333EB4ADDDB52C2 /* ValifyCapture.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ValifyCapture/ValifyCapture-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ValifyCapture/ValifyCapture-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ValifyCapture/ValifyCapture.modulemap";
-				PRODUCT_MODULE_NAME = ValifyCapture;
-				PRODUCT_NAME = ValifyCapture;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		45D3EABBB837EA5980530FF9F068EF61 /* Build configuration list for PBXNativeTarget "ValifyCapture" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D57EB12EC17F4FE474ADDF3DB872642D /* Debug */,
-				E06E0CCFF9C1AF3DDD0967523646FA08 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -749,6 +748,15 @@
 			buildConfigurations = (
 				3F77B29EE55B5728EC2CC92084DC1769 /* Debug */,
 				157AFBC42EB7902014F5EFD0524F7D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81862BB007E04755128712BC6524F5EC /* Build configuration list for PBXNativeTarget "ValifyCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA90874412D3116492E631F4194ACF0F /* Debug */,
+				1DB16CB9F419A8B5ECA20539737EFDC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

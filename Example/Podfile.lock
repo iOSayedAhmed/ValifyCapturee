@@ -1,16 +1,16 @@
 PODS:
-  - ValifyCapture (1.0.0)
+  - ValifyCapture (1.0.1)
 
 DEPENDENCIES:
-  - ValifyCapture
+  - ValifyCapture (~> 1.0.1)
 
 SPEC REPOS:
   trunk:
     - ValifyCapture
 
 SPEC CHECKSUMS:
-  ValifyCapture: efc1039f2cda697e56133e76e6b7be4de6f72d44
+  ValifyCapture: b83c4989350d8534449deca58decd8492c5a4768
 
-PODFILE CHECKSUM: 965595462a7005d31801e39a7cce97329f54633c
+PODFILE CHECKSUM: 6fe47b466da85cf2735f6e27447f8a2c4073c2da
 
 COCOAPODS: 1.14.3
