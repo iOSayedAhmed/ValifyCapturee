@@ -1,5 +1,5 @@
 //
-//  CameraViewModelDelegate.swift
+//  CameraDelegate.swift
 //  ValifyCapture
 //
 //  Created by iOSAYed on 05/10/2024.
