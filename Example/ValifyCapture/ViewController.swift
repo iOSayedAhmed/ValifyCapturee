@@ -11,28 +11,27 @@ import ValifyCapture
 
 class ViewController: UIViewController {
     
-    //MARK: OUTLETS
-    
+    //MARK: Outlets
     @IBOutlet weak var selfiCapturedImageView: UIImageView!
     
-    var selfieCameraVC: CameraViewController?
+    //MARK: Properties
     
+    //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        let selfi = SelfiCapture()
-        selfi.sayHello()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    @objc func startSelfieCapture() {
-           selfieCameraVC = CameraViewController()
-           selfieCameraVC?.modalPresentationStyle = .fullScreen
-           selfieCameraVC?.viewModel = CameraViewModel()
-           selfieCameraVC?.delegate = self
-           present(selfieCameraVC!, animated: true, completion: nil)
+    private func startSelfieCapture() {
+        let selfieCameraVC = CameraViewController()
+        selfieCameraVC.modalPresentationStyle = .fullScreen
+        selfieCameraVC.viewModel = CameraViewModel()
+        selfieCameraVC.delegate = self
+        present(selfieCameraVC, animated: true)
        }
 
     @IBAction func CaptureSelfiTapped(_ sender: UIButton) {
@@ -40,7 +39,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController :CameraViewModelDelegate{
+extension ViewController : CameraDelegate{
     func didCaptureImage(_ image: UIImage) {
             print("Finished")
             self.selfiCapturedImageView.image = image
