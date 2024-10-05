@@ -5,28 +5,29 @@
 //  Created by iOSAYed on 05/10/2024.
 //
 
-import UIKit
 import AVFoundation
+import Combine
+import UIKit
 
-public class CameraViewController: UIViewController, CameraViewModelDelegate {
-    var viewModel: CameraViewModel!
+public class CameraViewController: UIViewController {
+    public var viewModel: CameraViewModel!
+    public weak var delegate: CameraViewModelDelegate?
     var previewLayer: AVCaptureVideoPreviewLayer!
+    var cancellables: Set<AnyCancellable> = []
 
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
-
         viewModel = CameraViewModel()
-        viewModel.delegate = self
-
         setupCameraPreview()
+        bindViewModel()
     }
 
-    public override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.startSession()
     }
 
-    public override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         viewModel.stopSession()
     }
@@ -47,13 +48,34 @@ public class CameraViewController: UIViewController, CameraViewModelDelegate {
     @objc func capturePhoto() {
         viewModel.captureImage()
     }
+}
 
-    // MARK: - CameraViewModelDelegate methods
-    func didCaptureImage(_ image: UIImage) {
-        // Handle the captured image, e.g., transition to an image preview screen
+extension CameraViewController {
+    private func bindViewModel() {
+        viewModel.imageCapturedSubject
+            .sink(receiveValue: { [weak self] image in
+                guard let self else {return}
+                delegate?.didCaptureImage(image)
+                print("Image captured successfully")
+                dismissViewController()
+            })
+            .store(in: &cancellables)
+
+        viewModel.errorSubject
+            .sink(receiveValue: { [weak self] error in
+                guard let self else {return}
+                print("Failed to capture image: \(error.localizedDescription)")
+                delegate?.didFailWithError(error)
+                dismissViewController()
+            })
+            .store(in: &cancellables)
     }
 
-    func didFailWithError(_ error: Error) {
-        // Handle error, e.g., show an alert to the user
+    private func dismissViewController() {
+        if navigationController != nil {
+            navigationController?.popViewController(animated: true)
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
     }
 }
