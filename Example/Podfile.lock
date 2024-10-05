@@ -2,15 +2,15 @@ PODS:
   - ValifyCapture (1.0.0)
 
 DEPENDENCIES:
-  - ValifyCapture (from `../`)
+  - ValifyCapture
 
-EXTERNAL SOURCES:
-  ValifyCapture:
-    :path: "../"
+SPEC REPOS:
+  trunk:
+    - ValifyCapture
 
 SPEC CHECKSUMS:
-  ValifyCapture: 8811675606cca61e0065f2ff3619e7959cb57adf
+  ValifyCapture: efc1039f2cda697e56133e76e6b7be4de6f72d44
 
-PODFILE CHECKSUM: e2135aefa679caad6f00f292a770420f7f3f889a
+PODFILE CHECKSUM: 965595462a7005d31801e39a7cce97329f54633c
 
 COCOAPODS: 1.14.3
