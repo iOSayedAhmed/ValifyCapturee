@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol CameraViewModelDelegate: AnyObject {
+public protocol CameraDelegate: AnyObject {
     func didCaptureImage(_ image: UIImage)
     func didFailWithError(_ error: Error)
 }
