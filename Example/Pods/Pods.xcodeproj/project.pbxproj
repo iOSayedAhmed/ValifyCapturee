@@ -16,9 +16,6 @@
 		A8A43AD7386D2A768F3A029D99CD4F82 /* Pods-ValifyCapture_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56584812C0EAD499CEF0F500A0A660 /* Pods-ValifyCapture_Tests-dummy.m */; };
 		B6F13244A4B4FA591D245EA1A49EFA0C /* Pods-ValifyCapture_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FDB38B620269CEE680EEEE9C1D4AE /* Pods-ValifyCapture_Example-dummy.m */; };
 		BACEFC5B88838F1D184F3B2A21A264BC /* Pods-ValifyCapture_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 170F8C2066AB4E0B6897CEB2717FF78B /* Pods-ValifyCapture_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C82D20772CB1E9B800D284F2 /* CameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D20762CB1E9B800D284F2 /* CameraDelegate.swift */; };
-		C82D20792CB1EB2200D284F2 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D20782CB1EB2200D284F2 /* CameraViewModel.swift */; };
-		C82D207B2CB1EB2E00D284F2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D207A2CB1EB2E00D284F2 /* CameraViewController.swift */; };
 		D57452FBA6CBC0D57FAFF11FF3009F4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,16 +58,13 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		768B5762AFD00BBF3660AA3DBDFFAAA9 /* ValifyCapture-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ValifyCapture-Info.plist"; sourceTree = "<group>"; };
 		9CEC281D6368E2EEEB13530BC84373E9 /* Pods-ValifyCapture_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifyCapture_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1AB4F27751BA76D28CD37F3CB1E4929 /* Pods-ValifyCapture_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValifyCapture_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A59DF4F75A65DAE627A1514F90981A5E /* Pods-ValifyCapture_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValifyCapture_Example-Info.plist"; sourceTree = "<group>"; };
 		AD537E419A1AE43C36F255781F027ADE /* Pods-ValifyCapture_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ValifyCapture_Example-umbrella.h"; sourceTree = "<group>"; };
 		BAB57AB366C29642BBC11AE779590607 /* ValifyCapture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ValifyCapture-dummy.m"; sourceTree = "<group>"; };
 		C1E0B8E270287FCED7CBAB8700C4E524 /* Pods-ValifyCapture_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifyCapture_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2FE0C14F76288DE33765391F814C912 /* Pods-ValifyCapture_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ValifyCapture_Example.modulemap"; sourceTree = "<group>"; };
-		C82D20762CB1E9B800D284F2 /* CameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraDelegate.swift; path = ValifyCapture/Classes/CameraDelegate.swift; sourceTree = "<group>"; };
-		C82D20782CB1EB2200D284F2 /* CameraViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
-		C82D207A2CB1EB2E00D284F2 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		DD4BBD53196DE24D48224EFB5DCEE536 /* ValifyCapture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ValifyCapture.modulemap; sourceTree = "<group>"; };
 		F18F05A3075D212F3BD3EF89652EB2EE /* Pods-ValifyCapture_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ValifyCapture_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,12 +142,10 @@
 		9028AE8AB511411EFD0421B81E9312DA /* ValifyCapture */ = {
 			isa = PBXGroup;
 			children = (
-				C82D207A2CB1EB2E00D284F2 /* CameraViewController.swift */,
-				C82D20782CB1EB2200D284F2 /* CameraViewModel.swift */,
 				43F18EB7CFE8344D266E40E5CD0759BE /* SelfiCapture.swift */,
-				C82D20762CB1E9B800D284F2 /* CameraDelegate.swift */,
 				EF447D40FAF918AAC5FDA36F7239E60B /* Support Files */,
 			);
+			name = ValifyCapture;
 			path = ValifyCapture;
 			sourceTree = "<group>";
 		};
@@ -370,10 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79E6F7BF21DDFB208900714D9E6A8F6 /* SelfiCapture.swift in Sources */,
-				C82D207B2CB1EB2E00D284F2 /* CameraViewController.swift in Sources */,
-				C82D20792CB1EB2200D284F2 /* CameraViewModel.swift in Sources */,
 				5629612CA81E5F1EB4F593C906F5A2E4 /* ValifyCapture-dummy.m in Sources */,
-				C82D20772CB1E9B800D284F2 /* CameraDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,7 +651,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
