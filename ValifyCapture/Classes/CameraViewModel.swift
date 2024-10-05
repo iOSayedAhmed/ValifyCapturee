@@ -7,14 +7,16 @@
 
 import Foundation
 import AVFoundation
+import Combine
 
 public class CameraViewModel: NSObject {
     var captureSession: AVCaptureSession?
     var photoOutput: AVCapturePhotoOutput?
     var cameraPosition = AVCaptureDevice.Position.front
-
-    weak var delegate: CameraViewModelDelegate?
-
+    
+    var imageCapturedSubject = PassthroughSubject<UIImage, Never>()
+    var errorSubject = PassthroughSubject<Error, Never>()
+    
    public override init() {
         super.init()
         setupSession()
@@ -26,7 +28,6 @@ public class CameraViewModel: NSObject {
 
         captureSession.beginConfiguration()
 
-        // Attempt to set up video input.
         guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: cameraPosition),
               let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice), captureSession.canAddInput(videoDeviceInput) else {
             return
@@ -43,12 +44,16 @@ public class CameraViewModel: NSObject {
     }
 
     func startSession() {
-        captureSession?.startRunning()
-    }
+           DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+               self?.captureSession?.startRunning()
+           }
+       }
 
-    func stopSession() {
-        captureSession?.stopRunning()
-    }
+       func stopSession() {
+           DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+               self?.captureSession?.stopRunning()
+           }
+       }
 
     func captureImage() {
         let settings = AVCapturePhotoSettings()
@@ -59,12 +64,12 @@ public class CameraViewModel: NSObject {
 extension CameraViewModel: AVCapturePhotoCaptureDelegate {
     public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let error = error {
-            delegate?.didFailWithError(error)
+            self.errorSubject.send(error)
             return
         }
         if let imageData = photo.fileDataRepresentation(), let image = UIImage(data: imageData) {
             DispatchQueue.main.async {
-                self.delegate?.didCaptureImage(image)
+                self.imageCapturedSubject.send(image)
             }
         }
     }
