@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +18,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEF-HY-HKp">
+                                <rect key="frame" x="114.5" y="517" width="146" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Jd8-XQ-Onq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Capture Selfi">
+                                    <color key="titleColor" red="0.054901960780000002" green="0.066666666669999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CaptureSelfiTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Woe-Pa-sg1"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-j7-Ade">
+                                <rect key="frame" x="52" y="101" width="271" height="286.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="289" id="Iie-RJ-I6g"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gkm-j7-Ade" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="2u3-Mg-Tca"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tEF-HY-HKp" secondAttribute="bottom" constant="116" id="8kJ-nN-uQ0"/>
+                            <constraint firstItem="gkm-j7-Ade" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="MwF-DI-wfD"/>
+                            <constraint firstItem="tEF-HY-HKp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ynd-ts-4q0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gkm-j7-Ade" secondAttribute="trailing" constant="36" id="xsK-8x-Ebu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="selfiCapturedImageView" destination="gkm-j7-Ade" id="kQH-Po-T6u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="-2.2488755622188905"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+    </resources>
 </document>
