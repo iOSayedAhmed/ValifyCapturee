@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ValifyCapture_Example' do
+  pod 'ValifyCapture', :path => '../'
+
+  target 'ValifyCapture_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
