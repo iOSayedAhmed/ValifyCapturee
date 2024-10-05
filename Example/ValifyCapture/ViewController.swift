@@ -10,7 +10,8 @@ import UIKit
 import ValifyCapture
 
 class ViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let selfi = SelfiCapture()

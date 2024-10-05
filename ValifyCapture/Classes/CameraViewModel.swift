@@ -8,7 +8,7 @@
 import Foundation
 import AVFoundation
 
-class CameraViewModel: NSObject {
+public class CameraViewModel: NSObject {
     var captureSession: AVCaptureSession?
     var photoOutput: AVCapturePhotoOutput?
     var cameraPosition = AVCaptureDevice.Position.front
@@ -57,7 +57,7 @@ class CameraViewModel: NSObject {
 }
 
 extension CameraViewModel: AVCapturePhotoCaptureDelegate {
-    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+    public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let error = error {
             delegate?.didFailWithError(error)
             return

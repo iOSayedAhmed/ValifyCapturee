@@ -8,11 +8,11 @@
 import UIKit
 import AVFoundation
 
-class CameraViewController: UIViewController, CameraViewModelDelegate {
+public class CameraViewController: UIViewController, CameraViewModelDelegate {
     var viewModel: CameraViewModel!
     var previewLayer: AVCaptureVideoPreviewLayer!
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         viewModel = CameraViewModel()
@@ -21,12 +21,12 @@ class CameraViewController: UIViewController, CameraViewModelDelegate {
         setupCameraPreview()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.startSession()
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
+    public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         viewModel.stopSession()
     }
