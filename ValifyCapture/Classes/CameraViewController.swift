@@ -87,3 +87,13 @@ extension CameraViewController {
         }
     }
 }
+
+extension CameraViewController {
+    public static func show(from presentingViewController: UIViewController, delegate: CameraDelegate) {
+        let cameraVC = CameraViewController()
+        cameraVC.modalPresentationStyle = .fullScreen
+        cameraVC.viewModel = CameraViewModel()
+        cameraVC.delegate = delegate
+        presentingViewController.present(cameraVC, animated: true, completion: nil)
+    }
+}
